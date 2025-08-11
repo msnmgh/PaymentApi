@@ -1,0 +1,4 @@
+{
+  "create_payment_curl": "curl -X POST https://localhost:5001/api/payments/create -H 'Content-Type: application/json' -d '{\"amount\":15.0,\"currency\":\"USD\",\"description\":\"demo\"}' -k",
+  "webhook_example_curl": "curl -X POST https://localhost:5001/api/payments/webhook -H 'Content-Type: application/json' -H 'X-Signature: your-signature' -d '{\"event\":\"payment.succeeded\"}' -k"
+}
