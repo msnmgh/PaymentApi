@@ -1,0 +1,13 @@
+bin/
+obj/
+**/bin/
+**/obj/
+.vs/
+*.db
+*.sqlite
+*.user
+*.suo
+*.DS_Store
+*.log
+.env
+payments.db
