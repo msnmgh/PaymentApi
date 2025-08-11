@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  paymentapi:
+    build: ./src/PaymentApi
+    ports:
+      - "5000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Data Source=/data/payments.db
+      - WebhookSecret=changeme
+    volumes:
+      - payments_data:/data
+
+volumes:
+  payments_data:
